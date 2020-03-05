@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+.tox-tinymce {
+  border-top: none !important;
+  height: 100vh !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tox .tox-edit-area {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  height: 1100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px darkgrey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tox .tox-sidebar-wrap {
+  background-color: #f6f6f6;
+  min-height: 100rem;
+  overflow: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tox .tox-statusbar {
+  display: none !important;
+}
+
+.docTitleWrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 5px 0px 0px 20px;
+}
+
+.docIconStyle {
+  height: 40px;
+  width: 35px;
+  padding-right: 5px;
+}
+
+.docTitleStyle {
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
+  color: #272727;
+  font-weight: 500;
+}
+
+.docTitleStyle:hover {
+  border: 1px solid gray;
+  color: #272727;
+  font-weight: 500;
+}
+
+.shareButtonStyle {
+  background-color: #377cea;
+  padding: 10px 15px;
+  margin-top: 20px;
   color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #c9c9c9;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1px #c7c7c7;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shareButtonWrapper {
+  width: 100px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: -17px 0 0px auto;
 }

@@ -1,8 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Google Document Clone
 
-## Available Scripts
+## About the project
 
-In the project directory, you can run:
+It's a Google doc clone app which is built using ReactJS and create-react-app for the starter kit. It uses a wrapper called [tinymce-react](https://github.com/tinymce/tinymce-react) which in turn uses tinyMCE editor to make use of the functionalities used in the Google document.
+The app is built using react hooks which was released in React 16.8. Items in toolbar and menu are arranged in the same order as Google Doc. All the buttons in the app are functional except Share to maintain simplicity. **Add a comment** button has not been added as it is a premium feature. 
+The content of the document can be saved on click of the save button in the toolbar. It gets saved in local storage based on the following conditions:
+-  If the document is being saved for the first time
+-  If the document name is not the same as the previously saved document, then add the document to the existing array of documents 
+
+Console.log if the document name is same as the documents previously saved documents.
+You can open the documents saved by going into the **File** menu and hovering **open recent** menu item. Clicking on the recent document will show its content.
+
+## Getting Started
+
+### `Yarn`
+Download all the dependencies
 
 ### `yarn start`
 
